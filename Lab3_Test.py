@@ -13,7 +13,7 @@ class LabTests(unittest,TestCase):
         self.assertEqual(r.data, b'Hello world!!! This app testing pipeline.')
 
 if __name__ == '__main__':
-    import xmlrunner
-    runner = xmlrunner.XMLTestRunner(output='test-reports')
-    unittest.main(testRunner=runner)
+    #import xmlrunner
+    #runner = xmlrunner.XMLTestRunner(output='test-reports')
+    #unittest.main(testRunner=runner)
     unittest.main()
