@@ -16,10 +16,6 @@ pipeline {
             }
         }
         stage('Test'){
-            agent{docker{image 'alpine'
-                    args '-u\"root\"'
-                    }
-                }
             steps{
                 sh 'apk add --update python3 py-pip'
                 sh 'pip install Flask'
