@@ -2,7 +2,7 @@ import unittest
 import Lab3 as test_lab
 import json
 
-class LabTests(unittest,TestCase):
+class LabTests(unittest.TestCase):
 
     def setUp(self):
         self.app = test_lab.app.test_client()
